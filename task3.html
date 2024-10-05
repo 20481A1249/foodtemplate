@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        nav{
+            background-color: aquamarine;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        img{
+            width:90%;
+            padding: 10px;
+            height: 50vh;
+        }
+        section>div{
+            margin-left: 160px;
+            margin-right: 160px;
+        }
+        .el1{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        .el1 p{ 
+            height: 20vh;  
+            margin: 10px;  
+            text-align: center;
+            margin: 0px;
+        }
+        .el1 p b{
+            font-size: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .page{
+            font-size: 20px;
+            text-align: center;
+        }
+        .page a{
+            padding:5px 10px 5px 10px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+        .page a.active {
+        color: aliceblue;
+        background-color: black; 
+       
+        }
+        .page a.active:hover{
+            background-color: gray;
+            color: black;
+        }
+        .page a:hover{
+           color: whitesmoke;
+           background-color: black;
+        }
+        .page img{
+            width: 50vw;
+            height: 70vh;
+        }
+        footer{
+            text-align: center;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+        .f1{
+            width: 400px;
+            padding-left: 50px;
+        }
+        .f2 img{
+            width: 5vw;
+            height: 10vh;
+        }
+        .f2{
+            display: grid;
+            grid-template-columns: 30% 30%;
+            padding-left: 80px;
+        }
+        .j{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .j div{
+            border:2px solid black;
+            margin: 30px 10px 4px 10px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div><h1>Menu</h1></div>
+        <div><h1>My Food</h1></div>
+        <div><h1>Mail</h1></div>
+    </nav><br><br><br>
+    <section>
+        <div class="el1">
+            <div><img src="f1.jpg" alt="">
+            <p><b>The Perfect Sandwich, A Real NYC Classic</b><br><br>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+            <div><img src="f2.jpg" alt="">
+            <p><b>Let Me Tell You About This Steak</b><br><br>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+            <div><img src="f3.jpg" alt=""><p><b>Cherries, interrupted</b><br><br>Lorem ipsum text praesent tincidunt ipsum lipsum.
+                What else?</p></div>
+            <div><img src="f4.jpg" alt=""><p><b>Once Again, Robust Wine and Vegetable Pasta</b><br><br>Lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>    
+        </div>
+
+        <div class="el1" style="padding-top: 50px;">
+            <div><img src="f5.jpg" alt="">
+            <p><b>All I Need Is a Popsicle</b><br><br>Lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+            <div><img src="f6.jpg" alt="">
+            <p><b>Salmon For Your Skin</b><br><br>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+            <div><img src="f7.jpg" alt=""><p><b>The Perfect Sandwich, A Real Classic</b><br><br>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+            <div><img src="f8.jpg" alt=""><p><b>Le French</b><br><br>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>    
+        </div>
+
+        <div class="page">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+            <br><br><br>
+            <hr>
+        </div><br><br><br>
+
+        <div class="page">
+            <h2>About Me, The Food Man</h2><br><br>
+            <img src="f9.jpg" alt=""><br><br><br>
+
+            <h3>I am Who I Am!</h3><br>
+            <p>With Passion For Real, Good Food</p><br>
+            <p style="text-align:justify;">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.
+                 Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p><br><br>
+            
+            <hr><br><br><br>
+        </div>
+    </section>
+    <footer>
+        <div class="f1"><h4>FOOTER</h4>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Powered by<a href="" style="color: black;"></a>w3.css</p>
+        </div>
+
+        <div class="f2"><h4>BLOG POSTS</h4><br>
+            <img src="f10.jpg" alt=""></img>
+            <p><br>Lorem<br>Sed mattis nunc</p>
+
+            <img src="f11.jpg" alt=""></img>
+            <div><p><br>Ipsum<br>Praes tinci sed</p></div> 
+        </div>
+
+        <div class="f3"><h4>POPULAR TAGS</h4>
+            <div class="j">
+                <div>Travel</div>
+                <div>New York</div>
+                <div>Dinner</div>
+                <div>Salmom</div>
+                <div>France</div>
+                <div>Drinks</div><br>
+                <div>Ideas</div>
+                <div>Flavors</div>
+                <div>Cuisine</div>
+                <div>Chicken</div>
+                <div>Dressing</div>
+                <div>Fried</div>
+                <div>Fish</div>
+                <div>Duck</div>
+            </div>
+
+
+
+
+
+    </footer>
+</body>
+</html>
